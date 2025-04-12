@@ -4,7 +4,7 @@ const Button = ({
   padding,
   borderColor,
   backgroundColor,
-  backgroundOpacity,
+  backgroundOpacity = 1,
   textColor,
   children,
   className
