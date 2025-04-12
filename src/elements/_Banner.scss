@@ -1,0 +1,72 @@
+.banner {
+  display: flex;
+  padding: 100px 0 0 60px;
+  .left-part {
+    padding: 32px 40px 0 20px;
+    width: 50%;
+    .heading {
+      h1 {
+        font-weight: 700;
+        font-size: 85px;
+        color: #f5fbf2;
+        margin-bottom: 77px;
+        span {
+          color: #ffce4e;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      gap: 48px;
+      margin-bottom: 120px;
+      .btn {
+      }
+    }
+    .numbers {
+      display: flex;
+      justify-content: space-between;
+      .number {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3 {
+          font-weight: 700;
+          font-size: 62px;
+          color: #f5fbf2;
+        }
+        span {
+          font-weight: 400;
+          font-size: 24px;
+          color: #9b9e9a;
+        }
+      }
+    }
+  }
+
+  .right-part {
+    width: 50%;
+    .card {
+      .top-content {
+        .nft-info {
+          span {
+          }
+          h3 {
+          }
+        }
+      }
+
+      .bottom-content {
+        .artist {
+          span {
+          }
+          span {
+          }
+        }
+
+        .btn {
+        }
+      }
+    }
+  }
+}
