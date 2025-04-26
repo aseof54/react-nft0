@@ -1,8 +1,8 @@
 .banner {
   display: flex;
-  padding: 100px 0 0 60px;
+  padding: 0 0 0 60px;
   .left-part {
-    padding: 32px 40px 0 20px;
+    padding: 200px 40px 0 20px;
     width: 50%;
     .heading {
       h1 {
@@ -21,6 +21,8 @@
       gap: 48px;
       margin-bottom: 120px;
       .btn {
+        font-weight: 600;
+        font-size: 28px;
       }
     }
     .numbers {
@@ -45,9 +47,19 @@
   }
 
   .right-part {
+    backdrop-filter: blur(30px);
+    background: #4f464e73;
     width: 50%;
+    padding: 242px 0 0 63px;
     .card {
+      width: 558px;
+      height: 718px;
+
       .top-content {
+        margin: 24px 21px;
+        background-image: url("../assets/images/banners/auctions-info-bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
         .nft-info {
           span {
           }

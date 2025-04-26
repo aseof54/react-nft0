@@ -43,7 +43,7 @@ const Banner = () => {
             backgroundColor="#E9D7A7"
             backgroundOpacity="0.1"
             padding="24px 76px"
-            textColor="#000"
+            textColor="#FFF"
           >
             Create
           </Button>
@@ -60,7 +60,7 @@ const Banner = () => {
       <div className="right-part">
         <div
           className="card"
-          style={{ backgroundImage: `url(${bestNft.img})` }}
+          style={{ backgroundImage: `url(${bestNftImg})` }}
         >
           <div className="top-content">
 
@@ -88,7 +88,7 @@ const Banner = () => {
             >
               Start Bid
             </Button>
-            
+
           </div>
         </div>
       </div>

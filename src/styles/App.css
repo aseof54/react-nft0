@@ -81,8 +81,7 @@ header.header {
   display: flex;
   justify-content: space-between;
   padding: 37px 80px;
-  position: sticky;
-  top: 0;
+  position: fixed;
   width: 100vw;
 }
 header.header .logo {
@@ -122,10 +121,10 @@ header.header .header-menu ul li a:hover::after {
 }
 .banner {
   display: flex;
-  padding: 100px 0 0 60px;
+  padding: 0 0 0 60px;
 }
 .banner .left-part {
-  padding: 32px 40px 0 20px;
+  padding: 200px 40px 0 20px;
   width: 50%;
 }
 .banner .left-part .heading h1 {
@@ -141,6 +140,10 @@ header.header .header-menu ul li a:hover::after {
   display: flex;
   gap: 48px;
   margin-bottom: 120px;
+}
+.banner .left-part .buttons .btn {
+  font-weight: 600;
+  font-size: 28px;
 }
 .banner .left-part .numbers {
   display: flex;
@@ -162,7 +165,21 @@ header.header .header-menu ul li a:hover::after {
   color: #9b9e9a;
 }
 .banner .right-part {
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  background: rgba(79, 70, 78, 0.4509803922);
   width: 50%;
+  padding: 242px 0 0 63px;
+}
+.banner .right-part .card {
+  width: 558px;
+  height: 718px;
+}
+.banner .right-part .card .top-content {
+  margin: 24px 21px;
+  background-image: url("../assets/images/banners/auctions-info-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .App {
   background-color: #1C121F;
