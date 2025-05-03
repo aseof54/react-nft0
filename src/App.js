@@ -1,9 +1,11 @@
 import { BrowserRouter } from "react-router-dom";
 import Header from "./elements/Header";
-import "./styles/App.css";
 import Banner from "./elements/Banner";
 import Partners from "./elements/Partners";
-import Heading from "./components/Heading";
+import Auctions from "./elements/Auctions";
+import '@mantine/core/styles.css';
+import "@mantine/carousel/styles.css";
+import "./styles/App.css";
 function App() {
   return (
     <div className="App">
@@ -11,9 +13,7 @@ function App() {
         <Header />
         <Banner />
         <Partners />
-        <Heading bubbleColor="#8613A5" className="top">
-          Live Auctions
-        </Heading>
+        <Auctions />
       </BrowserRouter>
     </div>
   );
