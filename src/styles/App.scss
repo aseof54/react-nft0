@@ -1,7 +1,10 @@
 @import "Base";
 @import "../elements/Header";
 @import "../elements/Banner";
-.App{
+@import "../elements/Partners";
+@import "../components/Heading";
+
+.App, body{
     background-color: #1C121F;
     min-height: 100vh;
 }

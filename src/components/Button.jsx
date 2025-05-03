@@ -35,7 +35,8 @@ const Button = ({
         padding: padding,
         border: borderColor ? "1px solid" + borderColor : "unset",
         background: backgroundColor ? `rgba(${hexToRgb(backgroundColor, "str")}, ${backgroundOpacity})` : "unset",
-        color:textColor ? textColor : "unset"
+        color:textColor ? textColor : "unset",
+        height: "fit-content"
       }}
     >
       {children}

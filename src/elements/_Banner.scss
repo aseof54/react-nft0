@@ -1,8 +1,9 @@
 .banner {
   display: flex;
   padding: 0 0 0 60px;
+  margin-bottom: 200px;
   .left-part {
-    padding: 200px 40px 0 20px;
+    padding: 276px 40px 0 20px;
     width: 50%;
     .heading {
       h1 {
@@ -50,33 +51,71 @@
     backdrop-filter: blur(30px);
     background: #4f464e73;
     width: 50%;
-    padding: 242px 0 0 63px;
+    padding: 242px 0 103px 63px;
     .card {
       width: 558px;
       height: 718px;
-
+      padding-top: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       .top-content {
-        margin: 24px 21px;
+        margin: 0 21px 24px 21px;
         background-image: url("../assets/images/banners/auctions-info-bg.svg");
         background-repeat: no-repeat;
         background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        min-height: 98px;
+        align-items: center;
+        padding: 18px 54px;
         .nft-info {
           span {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.08em;
+            color: #e4dee7;
+            font-family: $font-work-sans;
           }
           h3 {
+            font-weight: 700;
+            font-size: 32px;
+            color: #fff;
+            font-family: $font-oxanium;
           }
         }
       }
 
       .bottom-content {
+        min-height: 142px;
+        background: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        padding: 33px 60px;
         .artist {
-          span {
+          display: flex;
+          flex-direction: column;
+          span:first-child {
+            font-family: $font-oxanium;
+            font-weight: 600;
+            font-size: 28px;
+            letter-spacing: 0.07em;
+            color: #16091b;
           }
-          span {
+          span:last-child {
+            font-family: $font-work-sans;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 148%;
+            color: #594d5e;
           }
         }
 
         .btn {
+          font-family: $font-work-sans;
+          font-weight: 500;
+          font-size: 24px;
+          color: #000;
         }
       }
     }
