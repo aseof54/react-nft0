@@ -1,0 +1,119 @@
+section.auctions {
+  .heading {
+    margin: 0 auto;
+    margin-bottom: 84px;
+  }
+  .mantine-Carousel-root {
+    padding-left: 80px;
+  }
+  .mantine-Carousel-slide {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    background-color: #3d2942;
+    .nft-image {
+      width: 100%;
+      min-height: 359px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-bottom: 28px;
+      .nft-timer {
+        width: 194px;
+        height: 66px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.12);
+        font-family: $font-work-sans;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #f5fbf2;
+      }
+    }
+    .nft-author {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 28px;
+      .author-info {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        img.author-image {
+          border-radius: 100%;
+          max-width: 54px;
+          max-height: 54px;
+        }
+        .author-name {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .name {
+            font-family: $font-work-sans;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 100%;
+            color: #f5fbf2;
+          }
+          span:not(.name) {
+            font-family: $font-work-sans;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 100%;
+            color: #bdaac1;
+          }
+        }
+      }
+      .likes {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        img.heart-icon {
+          max-width: 28px;
+        }
+        span {
+          font-family: $font-work-sans;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 100%;
+          color: #76607a;
+        }
+      }
+    }
+    .nft-price {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+      align-items: center;
+      span:not(.price) {
+        font-family: $font-work-sans;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 100%;
+        color: #c6bfc8;
+      }
+      span.price {
+        font-family: $font-oxanium;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        color: #f5fbf2;
+      }
+    }
+    .place-bid-btn {
+      button {
+        width: 100%;
+        font-family: $font-work-sans;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        color: #fff;
+      }
+    }
+  }
+}
