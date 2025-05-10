@@ -276,14 +276,32 @@ section.auctions .heading {
 }
 section.auctions .mantine-Carousel-root {
   padding-left: 80px;
+  margin-bottom: 184px;
 }
-section.auctions .mantine-Carousel-slide {
+section.auctions .mantine-Carousel-root .mantine-Carousel-controls {
+  gap: 24px;
+  top: -84px;
+  margin-right: 80px;
+  justify-content: flex-end;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-controls .mantine-Carousel-control {
+  background: unset;
+  border: unset;
+  color: gray;
+}
+section.auctions .mantine-Carousel-root .mantine-Carousel-controls .mantine-Carousel-control:first-child {
+  rotate: 180deg;
+}
+section.auctions .mantine-Carousel-slide .carousel-card {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding: 32px;
   display: flex;
   flex-direction: column;
   background-color: #3d2942;
 }
-section.auctions .mantine-Carousel-slide .nft-image {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-image {
   width: 100%;
   min-height: 359px;
   background-size: cover;
@@ -294,7 +312,7 @@ section.auctions .mantine-Carousel-slide .nft-image {
   align-items: flex-end;
   margin-bottom: 28px;
 }
-section.auctions .mantine-Carousel-slide .nft-image .nft-timer {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-image .nft-timer {
   width: 194px;
   height: 66px;
   display: flex;
@@ -307,76 +325,76 @@ section.auctions .mantine-Carousel-slide .nft-image .nft-timer {
   letter-spacing: 0.02em;
   color: #f5fbf2;
 }
-section.auctions .mantine-Carousel-slide .nft-author {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author {
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .author-info {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .author-info {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .author-info img.author-image {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .author-info img.author-image {
   border-radius: 100%;
   max-width: 54px;
   max-height: 54px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .author-info .author-name {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .author-info .author-name {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .author-info .author-name .name {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .author-info .author-name .name {
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 28px;
   line-height: 100%;
   color: #f5fbf2;
 }
-section.auctions .mantine-Carousel-slide .nft-author .author-info .author-name span:not(.name) {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .author-info .author-name span:not(.name) {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   color: #bdaac1;
 }
-section.auctions .mantine-Carousel-slide .nft-author .likes {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .likes {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .likes img.heart-icon {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .likes img.heart-icon {
   max-width: 28px;
 }
-section.auctions .mantine-Carousel-slide .nft-author .likes span {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-author .likes span {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 100%;
   color: #76607a;
 }
-section.auctions .mantine-Carousel-slide .nft-price {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-price {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
   align-items: center;
 }
-section.auctions .mantine-Carousel-slide .nft-price span:not(.price) {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-price span:not(.price) {
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   color: #c6bfc8;
 }
-section.auctions .mantine-Carousel-slide .nft-price span.price {
+section.auctions .mantine-Carousel-slide .carousel-card .nft-price span.price {
   font-family: "Oxanium", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 100%;
   color: #f5fbf2;
 }
-section.auctions .mantine-Carousel-slide .place-bid-btn button {
+section.auctions .mantine-Carousel-slide .carousel-card .place-bid-btn button {
   width: 100%;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
@@ -384,6 +402,64 @@ section.auctions .mantine-Carousel-slide .place-bid-btn button {
   line-height: 100%;
   letter-spacing: 0.05em;
   color: #fff;
+}
+
+section.how-it-works {
+  margin-bottom: 174px;
+}
+section.how-it-works .heading {
+  margin: 0 auto;
+  margin-bottom: 54px;
+}
+section.how-it-works .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 130px;
+}
+section.how-it-works .content .card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+section.how-it-works .content .card .card-icon {
+  width: 106px;
+  height: 100px;
+  border-radius: 100%;
+  background-color: #372839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.how-it-works .content .card .card-icon img {
+  width: 48px;
+  height: 48px;
+}
+section.how-it-works .content .card .card-title {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  text-transform: capitalize;
+  color: #ffce4e;
+}
+section.how-it-works .content .line {
+  margin-top: 53px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+  height: 2px;
+  background-image: repeating-linear-gradient(to right, #8B63E7, #8B63E7 16px, transparent 16px, transparent 32px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+section.how-it-works .content .line::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #8B63E7;
+  transform: translateY(-50%);
+  rotate: 45deg;
 }
 
 .App, body {

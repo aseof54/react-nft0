@@ -7,7 +7,8 @@ const Button = ({
   backgroundOpacity = 1,
   textColor,
   children,
-  className
+  className,
+  style
 }) => {
   function hexToRgb(hex, typeOfResult) {
     const cleanHex = hex.replace("#", "");
@@ -36,7 +37,8 @@ const Button = ({
         border: borderColor ? "1px solid" + borderColor : "unset",
         background: backgroundColor ? `rgba(${hexToRgb(backgroundColor, "str")}, ${backgroundOpacity})` : "unset",
         color:textColor ? textColor : "unset",
-        height: "fit-content"
+        height: "fit-content",
+        ...style
       }}
     >
       {children}

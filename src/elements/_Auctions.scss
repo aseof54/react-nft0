@@ -5,8 +5,24 @@ section.auctions {
   }
   .mantine-Carousel-root {
     padding-left: 80px;
+    margin-bottom: 184px;
+    .mantine-Carousel-controls {
+      gap: 24px;
+      top: -84px;
+      margin-right: 80px;
+      justify-content: flex-end;
+      .mantine-Carousel-control {
+        background: unset;
+        border: unset;
+        color: gray;
+        &:first-child{
+          rotate: 180deg;
+        }
+      }
+    }
   }
-  .mantine-Carousel-slide {
+  .mantine-Carousel-slide .carousel-card{
+    user-select: none;
     padding: 32px;
     display: flex;
     flex-direction: column;
